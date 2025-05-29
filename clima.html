@@ -11,21 +11,19 @@
     <link rel="shortcut icon" href="img/logo.png" type="image/x-icon">
 </head>
 <body>
+
     <header>
         <div class="logo">
             <h1><a href="index.html">E aí, <span>tempo?</span></a></h1>
         </div>
         <nav>
-            <div class="menu-toggle">
-                <i class="fas fa-bars"></i>
-            </div>
             <ul class="menu">
-                <li><a href="index.html">inicio</a></li>
-                <li><a href="sobre.html">sobre</a></li>
+                <li><a href="index.html">Início</a></li>
+                <li><a href="sobre.html">Sobre</a></li>
                 <li><a href="faq.html">FAQ</a></li>
-                <li><a href="clima.html" class="active">clima</a></li>
-                <li><a href="integrantes.html">integrantes</a></li>
-                <li><a href="contato.html">contato</a></li>
+                <li><a href="clima.html" class="active">Clima</a></li>
+                <li><a href="integrantes.html">Integrantes</a></li>
+                <li><a href="contato.html">Contato</a></li>
             </ul>
         </nav>
     </header>
@@ -35,76 +33,39 @@
             <h1>Clima Atual</h1>
         </section>
 
+        <div class="search-box form-group">
+            <input type="text" id="city-input" placeholder="Digite a cidade..." class="">
+            <button onclick="searchCity()" class="btn primary"><i class='bx bx-search'></i></button>
+        </div>
+
         <section class="weather-section">
             <div class="weather-card">
                 <div class="weather-header">
                     <div class="location">
-                        <h2>São Paulo, SP</h2>
+                        <h2>Carregando...</h2>
                         <p id="current-date">Carregando data...</p>
                     </div>
                     <div class="weather-icon">
-                        <i class="fas fa-cloud-rain"></i>
+                        <i class="fas fa-sun"></i>
                     </div>
                 </div>
                 <div class="weather-info">
                     <div class="temperature">
-                        <h3>23°C</h3>
-                        <p>Sensação térmica: 25°C</p>
+                        <h3>--°C</h3>
+                        <p>Sensação térmica: --°C</p>
                     </div>
                     <div class="conditions">
-                        <p>Chuva moderada</p>
-                        <p>Umidade: 85%</p>
-                        <p>Vento: 10 km/h</p>
+                        <p>---</p>
+                        <p>Umidade: --%</p>
                     </div>
                 </div>
                 <div class="weather-alert">
                     <div class="alert-icon">
-                        <i class="fas fa-exclamation-triangle"></i>
+                        <i class="fas fa-info-circle"></i>
                     </div>
                     <div class="alert-text">
-                        <h4>Alerta Laranja</h4>
-                        <p>Previsão de chuvas fortes nas próximas horas. Possibilidade de alagamentos em áreas de risco.</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="forecast">
-                <h3>Previsão para os próximos dias</h3>
-                <div class="forecast-cards">
-                    <div class="forecast-card">
-                        <p class="day">Amanhã</p>
-                        <div class="forecast-icon">
-                            <i class="fas fa-cloud-showers-heavy"></i>
-                        </div>
-                        <p class="forecast-temp">22°C / 18°C</p>
-                    </div>
-                    <div class="forecast-card">
-                        <p class="day">Quarta</p>
-                        <div class="forecast-icon">
-                            <i class="fas fa-cloud-rain"></i>
-                        </div>
-                        <p class="forecast-temp">24°C / 19°C</p>
-                    </div>
-                    <div class="forecast-card">
-                        <p class="day">Quinta</p>
-                        <div class="forecast-icon">
-                            <i class="fas fa-cloud"></i>
-                        </div>
-                        <p class="forecast-temp">26°C / 20°C</p>
-                    </div>
-                    <div class="forecast-card">
-                        <p class="day">Sexta</p>
-                        <div class="forecast-icon">
-                            <i class="fas fa-sun"></i>
-                        </div>
-                        <p class="forecast-temp">28°C / 21°C</p>
-                    </div>
-                    <div class="forecast-card">
-                        <p class="day">Sábado</p>
-                        <div class="forecast-icon">
-                            <i class="fas fa-cloud-sun"></i>
-                        </div>
-                        <p class="forecast-temp">27°C / 20°C</p>
+                        <h4>Sem Alertas</h4>
+                        <p>Busque uma cidade para ver o clima.</p>
                     </div>
                 </div>
             </div>
@@ -151,27 +112,7 @@
                 </div>
             </div>
         </section>
-
-        <section class="sustainable-section">
-            <h2>Atitudes Sustentáveis</h2>
-            <div class="sustainable-content">
-                <div class="sustainable-text">
-                    <p>Além de se prevenir durante períodos de chuvas intensas, é fundamental adotar atitudes sustentáveis que contribuam para a redução dos impactos ambientais e ajudem a prevenir alagamentos.</p>
-                    <h3>O que você pode fazer:</h3>
-                    <ul>
-                        <li><strong>Reduzir:</strong> Diminua o consumo de produtos descartáveis e opte por itens duráveis.</li>
-                        <li><strong>Reutilizar:</strong> Dê nova vida a objetos antes de descartá-los.</li>
-                        <li><strong>Reciclar:</strong> Separe corretamente os resíduos recicláveis.</li>
-                        <li><strong>Compostar:</strong> Transforme resíduos orgânicos em adubo.</li>
-                        <li><strong>Economizar água:</strong> Utilize a água de forma consciente.</li>
-                        <li><strong>Plantar árvores:</strong> Contribua para a permeabilidade do solo e redução de enchentes.</li>
-                    </ul>
-                </div>
-                <div class="sustainable-image">
-                    <img src="img/sustentavel.svg" alt="Pessoa com flores">
-                </div>
-            </div>
-        </section>
+        
     </main>
 
     <footer>
@@ -203,6 +144,7 @@
         </div>
     </footer>
 
+    <script src="js/api.js"></script>
     <script src="js/script.js"></script>
 </body>
 </html>

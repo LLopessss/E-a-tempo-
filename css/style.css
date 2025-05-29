@@ -986,3 +986,10 @@ footer {
     font-size: 1.1rem;
 }
 
+.search-box {
+    margin: 1% auto;
+    display: flex;
+    justify-content: center;
+    width: 500px;
+}
+
