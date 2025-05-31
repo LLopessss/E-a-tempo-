@@ -990,6 +990,8 @@ footer {
     margin: 1% auto;
     display: flex;
     justify-content: center;
-    width: 500px;
+    width: 100%;
+    max-width: 600px;
 }
+
 
