@@ -994,4 +994,18 @@ footer {
     max-width: 600px;
 }
 
+.laranja {
+    color: rgb(255, 136, 0);
+}
 
+.vermelho {
+    color: red;
+}
+
+.amarelo {
+    color: rgb(226, 173, 0);
+}
+
+.roxo {
+    color: purple;
+}
